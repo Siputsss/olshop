@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'order_success_screen.dart';
+
 class PaymentConfirmScreen extends StatefulWidget {
   const PaymentConfirmScreen({super.key});
 
@@ -309,7 +311,13 @@ class _PaymentConfirmScreenState extends State<PaymentConfirmScreen> {
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20),
                 child: InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const OrderSuccessScreen(),
+                        ));
+                  },
                   child: Container(
                     padding: const EdgeInsets.symmetric(
                       vertical: 15,
