@@ -1,14 +1,23 @@
 import 'package:flutter/material.dart';
-import 'package:olshop/screens/coba_profile/coba_profile.dart';
+
+import 'package:olshop/screens/product_screen_desktop.dart';
 
 import 'screens/home_screen.dart';
 
+// void main() {
+//   runApp(const MyApp());
+// }
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  String img;
+  MyApp({
+    Key? key,
+    this.img = '',
+  }) : super(key: key);
+  // const MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +26,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         scaffoldBackgroundColor: Colors.white,
       ),
-      home: HomeScreen(),
+      home: ProductScreenDesktop(img),
+      // home: HomeScreen(),
     );
   }
 }

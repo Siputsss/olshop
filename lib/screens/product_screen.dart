@@ -1,8 +1,8 @@
-import 'package:fan_carousel_image_slider/fan_carousel_image_slider.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:olshop/screens/cart_screen.dart';
+import 'package:olshop/screens/product_screen_desktop.dart';
 
 import '../widgets/bottom_sheet.dart';
 
@@ -12,6 +12,7 @@ class ProductScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final width = MediaQuery.of(context).size.width;
     return Scaffold(
       body: SingleChildScrollView(
         child: SafeArea(

@@ -13,7 +13,7 @@ class OrderSuccessScreen extends StatelessWidget {
           Column(
             children: [
               Image.asset(
-                "images/success2.png",
+                "images/success.png",
                 width: 250,
               ),
               const SizedBox(height: 20),
