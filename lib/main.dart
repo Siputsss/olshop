@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:olshop/screens/cart_screen.dart';
+import 'package:olshop/screens/product_screen.dart';
 
 import 'package:olshop/screens/product_screen_desktop.dart';
 
@@ -26,8 +28,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         scaffoldBackgroundColor: Colors.white,
       ),
-      home: ProductScreenDesktop(img),
+      // home: ProductScreen(img),
       // home: HomeScreen(),
+      home: const CartScreen(),
     );
   }
 }
