@@ -29,8 +29,8 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: Colors.white,
       ),
       // home: ProductScreen(img),
-      // home: HomeScreen(),
-      home: const CartScreen(),
+      home: HomeScreen(),
+      // home: const CartScreen(),
     );
   }
 }

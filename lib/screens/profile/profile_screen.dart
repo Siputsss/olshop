@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:olshop/screens/enum.dart';
 import 'package:olshop/widgets/bottom_nav_bar.dart';
 
+import '../../widgets/reusable_row.dart';
 import '../home_screen.dart';
 import 'profile_pic.dart';
 
@@ -107,29 +108,6 @@ class ProfileScreen extends StatelessWidget {
         ),
       ),
       bottomNavigationBar: const BottomNavBar(selectedMenu: MenuState.profile),
-    );
-  }
-}
-
-class ReusableRow extends StatelessWidget {
-  const ReusableRow({
-    super.key,
-    required this.title,
-    required this.iconData,
-  });
-
-  final String title;
-  final IconData iconData;
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: [
-        ListTile(
-          title: Text(title),
-          leading: Icon(iconData),
-        )
-      ],
     );
   }
 }
